@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-primary-bg text-white h-screen font-poppins font-normal;
+    }
+
+    ::-webkit-scrollbar {
+        @apply w-[2px];
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-primary;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-light-grey
+    }
+}
+
+@layer components {
+    .sign-input {
+        @apply outline-none border-2 rounded-[10px] border-blue py-2 px-2.5 bg-border text-dark-white min-[650px]:w-[284px] w-full;
+    }
+
+    .sign-input::placeholder {
+        @apply font-normal text-dark-white;
+    }
+
+    .sign-input__title {
+        @apply font-medium text-lg;
+    }
+
+    .sign-button {
+        @apply font-medium text-base py-2 px-6 bg-blue rounded-[10px] mb-3;
+    }
+
+    .sign-link {
+        @apply font-medium text-base;
+    }
+
+    .sign-input--error {
+        @apply h-[95.2px] flex flex-col justify-between;
+    }
+
+    .search-bar::placeholder {
+        @apply font-poppins font-normal text-base text-dark-white;
+    }
+
+    .dropdown-container:hover .dropdown-body {
+        @apply pointer-events-auto opacity-100 visible translate-y-0
+    }
+}
