@@ -24,6 +24,7 @@ const ChatSection = () => {
     return (
         <div className='flex flex-[3] flex-col h-screen relative'>
             {chatId && <ChatBody />}
+            12312312312312312312123123
         </div>
     )
 }
